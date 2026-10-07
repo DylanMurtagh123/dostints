@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms of Service — DOS Tints</title>
+<meta name="description" content="The terms and conditions that apply when you book a service with DOS Tints." />
+
+<!-- Google Consent Mode v2 — default state DENIED until user accepts cookies. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var savedConsent = 'denied';
+    try {
+      var raw = localStorage.getItem('dos_cookie_consent');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        var oneYear = 365 * 24 * 60 * 60 * 1000;
+        if (parsed && parsed.status === 'accepted' && (Date.now() - parsed.timestamp) < oneYear) {
+          savedConsent = 'granted';
+        }
+      }
+    } catch (e) {}
+    gtag('consent', 'default', {
+      'ad_storage': savedConsent, 'ad_user_data': savedConsent,
+      'ad_personalization': savedConsent, 'analytics_storage': savedConsent,
+      'functionality_storage': 'granted', 'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+  })();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6ZTX5JF');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg-2: #0e1117;
+    --surface: #14181f;
+    --line: #232934;
+    --line-2: #2c333f;
+    --ink: #f4f5f7;
+    --ink-dim: #aab1bd;
+    --ink-mute: #6b7280;
+    --orange: #f06b2c;
+    --cyan: #3ab6e0;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Inter Tight", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+    --radius: 14px;
+    --radius-lg: 22px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { width: min(820px, 92vw); margin-inline: auto; }
+  .wrap-wide { width: min(1240px, 92vw); margin-inline: auto; }
+
+  header.topbar {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10,12,16,.85);
+    border-bottom: 1px solid rgba(255,255,255,.05);
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 44px; height: 44px; border-radius: 50%; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-text .b1 { font-family: var(--serif); font-weight: 600; font-size: 19px; letter-spacing: .02em; }
+  .brand-text .b2 { font-family: var(--mono); font-size: 10px; letter-spacing: .25em; color: var(--ink-dim); margin-top: 4px; text-transform: uppercase; }
+  .back-home {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color .2s;
+  }
+  .back-home:hover { color: var(--ink); text-decoration: none; }
+
+  .legal-hero {
+    padding: 80px 0 50px;
+    border-bottom: 1px solid var(--line);
+  }
+  .legal-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--orange);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .legal-eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+  }
+  h1.legal-title {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-top: 22px;
+  }
+  h1.legal-title em { font-style: italic; color: var(--cyan); font-weight: 400; }
+  .legal-meta {
+    margin-top: 22px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  .legal-content {
+    padding: 60px 0 100px;
+  }
+  .legal-content h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    letter-spacing: -0.005em;
+  }
+  .legal-content h2:first-child { margin-top: 0; }
+  .legal-content h3 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--ink);
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .legal-content p {
+    color: var(--ink-dim);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .legal-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .legal-content ul li {
+    color: var(--ink-dim);
+    font-size: 16px;
+    padding-left: 22px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .legal-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 11px;
+    width: 6px; height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+  }
+  .legal-content strong { color: var(--ink); font-weight: 500; }
+  .legal-content .lead {
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 30px;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 50px;
+  }
+  .toc h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 14px;
+  }
+  .toc ol {
+    list-style: none;
+    counter-reset: toc;
+    padding: 0;
+    columns: 2;
+    column-gap: 28px;
+  }
+  @media (max-width: 600px) { .toc ol { columns: 1; } }
+  .toc ol li {
+    counter-increment: toc;
+    padding: 6px 0;
+    font-size: 14px;
+    break-inside: avoid;
+  }
+  .toc ol li::before {
+    content: counter(toc, decimal-leading-zero) " · ";
+    color: var(--orange);
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .toc a { color: var(--ink-dim); }
+  .toc a:hover { color: var(--ink); text-decoration: none; }
+
+  .contact-card {
+    margin-top: 50px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+  }
+  .contact-card h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  .contact-card p { margin-bottom: 8px; }
+  .contact-card a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; }
+
+  footer { background: #07080b; padding: 50px 0 30px; border-top: 1px solid var(--line); }
+  .foot-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .foot-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .foot-links a { color: var(--ink-dim); font-size: 13px; text-decoration: none; }
+  .foot-links a:hover { color: var(--ink); }
+  .foot-copy { font-size: 12px; color: var(--ink-mute); }
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6ZTX5JF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="topbar">
+  <div class="wrap-wide topbar-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="DOS Tints logo" />
+      <div class="brand-text">
+        <span class="b1">DOS Tints</span>
+        <span class="b2">Premium · Window Film</span>
+      </div>
+    </a>
+    <a href="index.html" class="back-home">← Back to home</a>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <div class="wrap">
+    <div class="legal-eyebrow">Legal</div>
+    <h1 class="legal-title">Terms of <em>Service</em></h1>
+    <div class="legal-meta">Last updated · 7 May 2026</div>
+  </div>
+</section>
+
+<section class="legal-content">
+  <div class="wrap">
+
+    <p class="lead">
+      These terms set out the agreement between you and DOS Tints Ltd ("DOS Tints", "we", "us") when you book a service with us. By making a booking — by phone, message, email or our online form — you agree to these terms.
+    </p>
+
+    <div class="toc">
+      <h4>Contents</h4>
+      <ol>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#bookings">Bookings & deposits</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#your-vehicle">Your vehicle</a></li>
+        <li><a href="#service">Our service</a></li>
+        <li><a href="#legality">Legal tint limits</a></li>
+        <li><a href="#warranty">Warranty</a></li>
+        <li><a href="#aftercare">Aftercare</a></li>
+        <li><a href="#cancellation">Cancellation</a></li>
+        <li><a href="#liability">Liability</a></li>
+        <li><a href="#complaints">Complaints</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#governing-law">Governing law</a></li>
+      </ol>
+    </div>
+
+    <h2 id="about">1. About us</h2>
+    <p>DOS Tints Ltd is a car window tinting business based at <strong>836-840 Hertford Road, Enfield EN3 6UE</strong>. You can reach us on <strong>07599 000 899</strong> or <a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a>.</p>
+
+    <h2 id="bookings">2. Bookings & deposits</h2>
+    <p>To secure a slot, we ask for a small deposit at the time of booking. The deposit is deducted from your final bill. Bookings are only confirmed once the deposit has been received and we've confirmed the date and time in writing (usually by WhatsApp or email).</p>
+    <p>If you cancel or reschedule with at least 48 hours' notice, your deposit is fully transferable. See <a href="#cancellation">section 10</a> for full cancellation terms.</p>
+
+    <h2 id="pricing">3. Pricing</h2>
+    <p>Prices are quoted based on your vehicle make, model, year and the film and shade you've chosen. We always confirm a fixed all-in price before any work starts — there are no hidden charges or surprise add-ons once you arrive.</p>
+    <p>Quotes are valid for 30 days. If you'd like additional services (extra windows, headlight tinting, etc.) on the day, we'll quote and confirm those separately before doing the work.</p>
+
+    <h2 id="payment">4. Payment</h2>
+    <p>The balance is payable in full on the day, once the work has been completed and you've signed off the finish. We accept bank transfer, card and cash.</p>
+
+    <h2 id="your-vehicle">5. Your vehicle</h2>
+    <p>By bringing your vehicle to us, you confirm that:</p>
+    <ul>
+      <li>You are the owner or have the owner's permission to authorise the work</li>
+      <li>The vehicle is roadworthy and legal to drive to and from our premises</li>
+      <li>Existing glass is in good condition. We will inspect it with you before starting</li>
+      <li>You've removed any personal items you don't want left in the car</li>
+    </ul>
+    <p>If we spot an issue with the glass before starting (chips, cracks, defrost lines lifting, etc.), we'll show you and discuss options before going ahead.</p>
+
+    <h2 id="service">6. Our service</h2>
+    <p>We will:</p>
+    <ul>
+      <li>Use the film and shade specified on your booking</li>
+      <li>Clean and prepare each window before fitting</li>
+      <li>Hand-cut and hand-fit each piece in our climate-controlled bay</li>
+      <li>Walk you around the finished car for sign-off before you drive away</li>
+      <li>Give you a written aftercare guide and your warranty details</li>
+    </ul>
+
+    <h2 id="legality">7. Legal tint limits in the UK</h2>
+    <p>UK law sets minimum visible light transmission (VLT) levels for the front windscreen and front side windows. We will always advise you on which shades are road-legal:</p>
+    <ul>
+      <li><strong>Front windscreen:</strong> must allow at least 75% of light through</li>
+      <li><strong>Front side windows:</strong> must allow at least 70% of light through</li>
+      <li><strong>Rear side windows and rear windscreen:</strong> no legal limit</li>
+    </ul>
+    <p>If you choose a shade for the front of the vehicle that doesn't meet these limits (for example, for show or off-road use), we will fit it only if you understand and accept that the vehicle may not be road-legal. We'll ask you to confirm this in writing before we proceed. Responsibility for road-legality after that point rests with you as the driver.</p>
+
+    <h2 id="warranty">8. Warranty</h2>
+    <p>Every install we carry out comes with a written lifetime warranty against:</p>
+    <ul>
+      <li>Bubbling</li>
+      <li>Peeling</li>
+      <li>Cracking</li>
+      <li>Discolouration or fading (e.g. film going purple)</li>
+    </ul>
+    <p>The warranty:</p>
+    <ul>
+      <li>Is registered to the vehicle and the original customer</li>
+      <li>Is transferable if you sell the vehicle (please let us know so we can update our records)</li>
+      <li>Does <strong>not</strong> cover damage caused by accidents, vandalism, attempted removal, or failure to follow our aftercare guidance</li>
+      <li>Does not cover existing or pre-existing defects in the glass</li>
+    </ul>
+    <p>To claim under the warranty, just get in touch and we'll arrange to inspect and put it right.</p>
+
+    <h2 id="aftercare">9. Aftercare</h2>
+    <p>Window film needs about 7–14 days to fully cure. During this period:</p>
+    <ul>
+      <li>Don't roll the windows down</li>
+      <li>Don't clean the inside of the windows</li>
+      <li>You may notice a slight haze or small water pockets — this is normal and clears as the film dries</li>
+    </ul>
+    <p>After curing, clean the inside of the glass only with a soft cloth and ammonia-free cleaner. We'll give you full written aftercare instructions on the day.</p>
+
+    <h2 id="cancellation">10. Cancellation & rescheduling</h2>
+    <h3>By you</h3>
+    <ul>
+      <li><strong>48+ hours before your slot:</strong> we'll fully transfer your deposit to a new date.</li>
+      <li><strong>Less than 48 hours:</strong> the deposit is non-refundable, as we'll have turned away other customers for that slot.</li>
+      <li><strong>No-shows:</strong> the deposit is non-refundable.</li>
+    </ul>
+    <h3>By us</h3>
+    <p>If we have to cancel or reschedule (illness, supply delay, equipment failure, etc.), we'll give you as much notice as we can and offer the next available slot. If a new slot doesn't suit you, we'll refund the deposit in full.</p>
+    <h3>Statutory cancellation rights</h3>
+    <p>If you booked online or by phone (rather than in person at our premises), you have the right to cancel within 14 days under the Consumer Contracts Regulations 2013 — unless the work has already started with your express request. Just let us know in writing.</p>
+
+    <h2 id="liability">11. Liability</h2>
+    <p>We carry full public liability insurance and we take real care of every vehicle in our bay. That said, here's the legal bit:</p>
+    <ul>
+      <li>We're responsible for any loss or damage we cause through our negligence or breach of these terms.</li>
+      <li>We're not liable for indirect or unforeseeable losses (for example, business income while your car is with us), or for damage caused by pre-existing defects in the glass that couldn't reasonably be spotted before fitting.</li>
+      <li>Nothing in these terms limits or excludes our liability for death, personal injury caused by negligence, fraud, or anything else where the law doesn't allow it to be limited.</li>
+      <li>Your statutory rights as a consumer under the Consumer Rights Act 2015 are unaffected by anything in these terms.</li>
+    </ul>
+
+    <h2 id="complaints">12. Complaints</h2>
+    <p>If anything's not right, please tell us straight away — ideally on the day, and definitely within 48 hours of pick-up. We'll always do our best to put it right quickly. Email us at <a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a> or call <strong>07599 000 899</strong>.</p>
+
+    <h2 id="changes">13. Changes to these terms</h2>
+    <p>We may update these terms from time to time. The version that applies to you is the one in effect at the date of your booking. The "last updated" date at the top of the page reflects the most recent change.</p>
+
+    <h2 id="governing-law">14. Governing law</h2>
+    <p>These terms are governed by the laws of England and Wales. Any disputes will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+    <div class="contact-card">
+      <h3>Questions about a booking?</h3>
+      <p>We'd rather hear from you than have you guess. Get in touch any time during opening hours.</p>
+      <p>📞 <a href="tel:07599000899">07599 000 899</a> &nbsp;·&nbsp; ✉️ <a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap-wide foot-inner">
+    <span class="foot-copy">© 2026 DOS Tints Ltd. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

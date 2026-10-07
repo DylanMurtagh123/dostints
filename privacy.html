@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — DOS Tints</title>
+<meta name="description" content="How DOS Tints collects, uses and protects your personal information." />
+
+<!-- Google Consent Mode v2 — default state DENIED until user accepts cookies. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function () {
+    var savedConsent = 'denied';
+    try {
+      var raw = localStorage.getItem('dos_cookie_consent');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        var oneYear = 365 * 24 * 60 * 60 * 1000;
+        if (parsed && parsed.status === 'accepted' && (Date.now() - parsed.timestamp) < oneYear) {
+          savedConsent = 'granted';
+        }
+      }
+    } catch (e) {}
+    gtag('consent', 'default', {
+      'ad_storage': savedConsent, 'ad_user_data': savedConsent,
+      'ad_personalization': savedConsent, 'analytics_storage': savedConsent,
+      'functionality_storage': 'granted', 'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+  })();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6ZTX5JF');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg-2: #0e1117;
+    --surface: #14181f;
+    --line: #232934;
+    --line-2: #2c333f;
+    --ink: #f4f5f7;
+    --ink-dim: #aab1bd;
+    --ink-mute: #6b7280;
+    --orange: #f06b2c;
+    --orange-2: #ff8246;
+    --cyan: #3ab6e0;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Inter Tight", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+    --radius: 14px;
+    --radius-lg: 22px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap { width: min(820px, 92vw); margin-inline: auto; }
+  .wrap-wide { width: min(1240px, 92vw); margin-inline: auto; }
+
+  /* Top bar - simplified */
+  header.topbar {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10,12,16,.85);
+    border-bottom: 1px solid rgba(255,255,255,.05);
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 44px; height: 44px; border-radius: 50%; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-text .b1 { font-family: var(--serif); font-weight: 600; font-size: 19px; letter-spacing: .02em; }
+  .brand-text .b2 { font-family: var(--mono); font-size: 10px; letter-spacing: .25em; color: var(--ink-dim); margin-top: 4px; text-transform: uppercase; }
+  .back-home {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color .2s;
+  }
+  .back-home:hover { color: var(--ink); text-decoration: none; }
+
+  /* Page header */
+  .legal-hero {
+    padding: 80px 0 50px;
+    border-bottom: 1px solid var(--line);
+  }
+  .legal-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--orange);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .legal-eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+  }
+  h1.legal-title {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-top: 22px;
+  }
+  h1.legal-title em { font-style: italic; color: var(--cyan); font-weight: 400; }
+  .legal-meta {
+    margin-top: 22px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  /* Content */
+  .legal-content {
+    padding: 60px 0 100px;
+  }
+  .legal-content h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    letter-spacing: -0.005em;
+  }
+  .legal-content h2:first-child { margin-top: 0; }
+  .legal-content h3 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--ink);
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .legal-content p {
+    color: var(--ink-dim);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .legal-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .legal-content ul li {
+    color: var(--ink-dim);
+    font-size: 16px;
+    padding-left: 22px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .legal-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 11px;
+    width: 6px; height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+  }
+  .legal-content strong { color: var(--ink); font-weight: 500; }
+  .legal-content .lead {
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 30px;
+  }
+
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 50px;
+  }
+  .toc h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 14px;
+  }
+  .toc ol {
+    list-style: none;
+    counter-reset: toc;
+    padding: 0;
+    columns: 2;
+    column-gap: 28px;
+  }
+  @media (max-width: 600px) { .toc ol { columns: 1; } }
+  .toc ol li {
+    counter-increment: toc;
+    padding: 6px 0;
+    font-size: 14px;
+    break-inside: avoid;
+  }
+  .toc ol li::before {
+    content: counter(toc, decimal-leading-zero) " · ";
+    color: var(--orange);
+    font-family: var(--mono);
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  .toc a { color: var(--ink-dim); }
+  .toc a:hover { color: var(--ink); text-decoration: none; }
+
+  .contact-card {
+    margin-top: 50px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+  }
+  .contact-card h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  .contact-card p { margin-bottom: 8px; }
+  .contact-card a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--orange); text-underline-offset: 4px; }
+
+  /* Footer */
+  footer { background: #07080b; padding: 50px 0 30px; border-top: 1px solid var(--line); }
+  .foot-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .foot-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .foot-links a {
+    color: var(--ink-dim);
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .foot-links a:hover { color: var(--ink); }
+  .foot-copy {
+    font-size: 12px;
+    color: var(--ink-mute);
+  }
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6ZTX5JF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="topbar">
+  <div class="wrap-wide topbar-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="DOS Tints logo" />
+      <div class="brand-text">
+        <span class="b1">DOS Tints</span>
+        <span class="b2">Premium · Window Film</span>
+      </div>
+    </a>
+    <a href="index.html" class="back-home">
+      ← Back to home
+    </a>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <div class="wrap">
+    <div class="legal-eyebrow">Legal</div>
+    <h1 class="legal-title">Privacy <em>Policy</em></h1>
+    <div class="legal-meta">Last updated · 7 May 2026</div>
+  </div>
+</section>
+
+<section class="legal-content">
+  <div class="wrap">
+
+    <p class="lead">
+      This privacy policy explains how DOS Tints Ltd ("DOS Tints", "we", "us") collects, uses and protects the personal information you share with us when you visit our website, contact us, or book our services.
+    </p>
+
+    <div class="toc">
+      <h4>Contents</h4>
+      <ol>
+        <li><a href="#who-we-are">Who we are</a></li>
+        <li><a href="#what-we-collect">What we collect</a></li>
+        <li><a href="#how-we-use-it">How we use it</a></li>
+        <li><a href="#legal-basis">Legal basis</a></li>
+        <li><a href="#sharing">Who we share it with</a></li>
+        <li><a href="#cookies">Cookies & tracking</a></li>
+        <li><a href="#retention">How long we keep it</a></li>
+        <li><a href="#your-rights">Your rights</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+      </ol>
+    </div>
+
+    <h2 id="who-we-are">1. Who we are</h2>
+    <p>
+      DOS Tints Ltd is a car window tinting business based at 836-840 Hertford Road, Enfield EN3 6UE. For the purposes of UK data protection law, we are the "data controller" of any personal information you share with us.
+    </p>
+    <p>
+      You can contact us at any time by phone on <strong>07599 000 899</strong> or by email at <a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a>.
+    </p>
+
+    <h2 id="what-we-collect">2. What we collect</h2>
+    <p>We only collect the information we genuinely need to give you a quote, book your car in, and stay in touch. That includes:</p>
+
+    <h3>When you contact us</h3>
+    <ul>
+      <li>Your name</li>
+      <li>Your phone number</li>
+      <li>Your email address</li>
+      <li>Details about your vehicle (make, model, year)</li>
+      <li>The service you're enquiring about (e.g. standard or ceramic film)</li>
+      <li>Any additional notes you choose to include</li>
+    </ul>
+
+    <h3>When you visit the website</h3>
+    <ul>
+      <li>Your IP address and approximate location</li>
+      <li>Your browser type, device and operating system</li>
+      <li>Pages you visit and how you arrived at our site</li>
+      <li>Time and duration of your visit</li>
+    </ul>
+    <p>This information is collected via cookies and analytics tools — see <a href="#cookies">section 6</a> for details, and only if you've given consent.</p>
+
+    <h2 id="how-we-use-it">3. How we use it</h2>
+    <p>We use your personal information to:</p>
+    <ul>
+      <li>Respond to your enquiry and send you a quote</li>
+      <li>Book your appointment and send confirmation messages</li>
+      <li>Carry out the service you've booked</li>
+      <li>Honour your warranty and deal with any aftercare</li>
+      <li>Process payments and keep accurate business records</li>
+      <li>Improve our website and understand which marketing works</li>
+      <li>Comply with our legal obligations (e.g. tax records)</li>
+    </ul>
+    <p>We will never sell your data to third parties, and we won't send you marketing messages unless you've specifically agreed to receive them.</p>
+
+    <h2 id="legal-basis">4. Legal basis for processing</h2>
+    <p>Under UK GDPR, we need a lawful reason to handle your personal information. Our reasons are:</p>
+    <ul>
+      <li><strong>Contract:</strong> we need your details to provide the service you've booked.</li>
+      <li><strong>Legitimate interests:</strong> we use limited information to run, secure and improve our business — only where this doesn't override your rights.</li>
+      <li><strong>Consent:</strong> for analytics, marketing cookies and any optional marketing communications. You can withdraw consent at any time.</li>
+      <li><strong>Legal obligation:</strong> we keep certain records (e.g. invoices) to comply with UK tax and accounting law.</li>
+    </ul>
+
+    <h2 id="sharing">5. Who we share it with</h2>
+    <p>We only share your information with carefully chosen third parties who help us run the business:</p>
+    <ul>
+      <li><strong>Meta (WhatsApp):</strong> if you choose to contact us via WhatsApp, your message is processed by Meta. Their privacy policy applies.</li>
+      <li><strong>Google:</strong> we use Google Tag Manager to load Google Analytics and Google Ads conversion tracking (only with your cookie consent) so we can understand site performance and which ads work.</li>
+      <li><strong>Our email provider (Google Workspace):</strong> if you email us, your message is stored on Google's servers.</li>
+      <li><strong>Payment providers and accountants:</strong> for processing payments and keeping accurate financial records.</li>
+      <li><strong>Authorities:</strong> we may share information if required by law (e.g. HMRC, the police).</li>
+    </ul>
+    <p>Some of these providers may transfer data outside the UK. Where they do, we rely on standard contractual clauses or equivalent safeguards approved by the UK Information Commissioner.</p>
+
+    <h2 id="cookies">6. Cookies & tracking</h2>
+    <p>Our website uses two types of cookies:</p>
+    <h3>Essential cookies</h3>
+    <p>These are needed for the site to work properly (for example, remembering your cookie consent choice). They don't track you across the web and don't require consent.</p>
+    <h3>Analytics & advertising cookies</h3>
+    <p>We use Google Tag Manager to load Google Analytics and Google Ads conversion tracking. These help us understand how visitors use our site and which ads bring people to us. They are <strong>only set if you accept them</strong> via the cookie banner.</p>
+    <p>You can change your mind at any time by clearing your browser cookies, after which the banner will reappear so you can update your choice.</p>
+
+    <h2 id="retention">7. How long we keep it</h2>
+    <p>We hold onto your information only as long as we need it:</p>
+    <ul>
+      <li><strong>Enquiries that don't lead to a booking:</strong> up to 12 months</li>
+      <li><strong>Customer records (bookings, invoices):</strong> 6 years (required by HMRC)</li>
+      <li><strong>Warranty records:</strong> for the lifetime of the warranty</li>
+      <li><strong>Website analytics:</strong> up to 14 months</li>
+    </ul>
+
+    <h2 id="your-rights">8. Your rights</h2>
+    <p>Under UK GDPR, you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the personal information we hold about you</li>
+      <li><strong>Correct</strong> anything that's wrong or out of date</li>
+      <li><strong>Delete</strong> your information (subject to our legal obligations)</li>
+      <li><strong>Restrict or object</strong> to how we use it</li>
+      <li><strong>Withdraw consent</strong> for anything we do based on consent</li>
+      <li><strong>Receive a copy</strong> of your data in a portable format</li>
+      <li><strong>Complain</strong> to the UK Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a> if you're unhappy with how we've handled your data</li>
+    </ul>
+    <p>To exercise any of these rights, just email us at <a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a>. We'll respond within 30 days.</p>
+
+    <h2 id="security">9. Security</h2>
+    <p>We take reasonable steps to keep your information safe — including secure devices, strong passwords, and trusted third-party providers. No system is ever 100% secure, but we'll let you know promptly if we ever suspect a breach involving your data.</p>
+
+    <h2 id="changes">10. Changes to this policy</h2>
+    <p>We may update this policy from time to time. The date at the top of the page reflects the most recent change. For significant updates, we'll let existing customers know directly.</p>
+
+    <div class="contact-card">
+      <h3>Questions about your data?</h3>
+      <p>Get in touch and we'll come back to you within a working day.</p>
+      <p>📞 <a href="tel:07599000899">07599 000 899</a> &nbsp;·&nbsp; ✉️ <a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap-wide foot-inner">
+    <span class="foot-copy">© 2026 DOS Tints Ltd. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,2064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DOS Tints — Premium Car Window Tinting in Enfield | Ceramic & Standard Film</title>
+<meta name="description" content="Premium car window tinting in Enfield, London. Specialist ceramic & standard film fitted by experts. Lifetime warranty. Audi, BMW, Mercedes, Porsche, Range Rover. Book today." />
+
+<!-- Google Consent Mode v2 — default state DENIED until user accepts cookies.
+     This must run BEFORE Google Tag Manager so GTM respects the consent state. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Read any previously-saved consent choice
+  (function () {
+    var savedConsent = 'denied';
+    try {
+      var raw = localStorage.getItem('dos_cookie_consent');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        var oneYear = 365 * 24 * 60 * 60 * 1000;
+        if (parsed && parsed.status === 'accepted' && (Date.now() - parsed.timestamp) < oneYear) {
+          savedConsent = 'granted';
+        }
+      }
+    } catch (e) { /* localStorage blocked - default to denied */ }
+
+    gtag('consent', 'default', {
+      'ad_storage':            savedConsent,
+      'ad_user_data':          savedConsent,
+      'ad_personalization':    savedConsent,
+      'analytics_storage':     savedConsent,
+      'functionality_storage': 'granted',  // Essential cookies only
+      'security_storage':      'granted',  // Security cookies always allowed
+      'wait_for_update':       500          // Wait up to 500ms for explicit update
+    });
+  })();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6ZTX5JF');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+
+<style>
+  :root {
+    --bg:        #0a0c10;
+    --bg-2:      #0e1117;
+    --surface:   #14181f;
+    --surface-2: #1a1f28;
+    --line:      #232934;
+    --line-2:    #2c333f;
+    --ink:       #f4f5f7;
+    --ink-dim:   #aab1bd;
+    --ink-mute:  #6b7280;
+    --orange:    #f06b2c;
+    --orange-2:  #ff8246;
+    --cyan:      #3ab6e0;
+    --cyan-2:    #6fd2ee;
+
+    --serif: "Fraunces", Georgia, serif;
+    --sans:  "Inter Tight", system-ui, sans-serif;
+    --mono:  "JetBrains Mono", ui-monospace, monospace;
+
+    --radius: 14px;
+    --radius-lg: 22px;
+    --shadow-1: 0 4px 24px rgba(0,0,0,.35);
+    --shadow-2: 0 24px 80px rgba(0,0,0,.55);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img { max-width: 100%; display: block; }
+  a  { color: inherit; text-decoration: none; }
+
+  /* ---------- Layout helpers ---------- */
+  .wrap { width: min(1240px, 92vw); margin-inline: auto; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 26px;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .01em;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease, border-color .25s ease;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--orange);
+    color: #fff;
+    box-shadow: 0 10px 30px -8px rgba(240,107,44,.6);
+  }
+  .btn-primary:hover { transform: translateY(-2px); background: var(--orange-2); box-shadow: 0 16px 40px -8px rgba(240,107,44,.7); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line-2);
+  }
+  .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .btn .arrow { transition: transform .25s ease; }
+  .btn:hover .arrow { transform: translateX(4px); }
+
+  /* ---------- Top bar ---------- */
+  header.topbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 50;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10,12,16,.65);
+    border-bottom: 1px solid rgba(255,255,255,.05);
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 44px; height: 44px; border-radius: 50%; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-text .b1 { font-family: var(--serif); font-weight: 600; font-size: 19px; letter-spacing: .02em; }
+  .brand-text .b2 { font-family: var(--mono); font-size: 10px; letter-spacing: .25em; color: var(--ink-dim); margin-top: 4px; text-transform: uppercase; }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a {
+    font-size: 14px; color: var(--ink-dim); transition: color .2s;
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a::after {
+    content: ""; position: absolute; left: 0; bottom: -6px; height: 1px; width: 0;
+    background: var(--orange); transition: width .25s;
+  }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-phone { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 13px; color: var(--ink); }
+  .nav-phone svg { color: var(--orange); }
+
+  @media (max-width: 880px) {
+    .nav-links { display: none; }
+    .nav-phone span { display: none; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 140px 0 80px;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: -2;
+    background-image: url('images/g-wagon-hero.png');
+    background-size: cover;
+    background-position: center 15%;
+    filter: saturate(.95) contrast(1.05);
+    transform: scale(1);
+    animation: slowZoom 30s ease-in-out infinite alternate;
+  }
+  @media (min-width: 1400px) {
+    .hero-bg { background-position: center 25%; }
+  }
+  @media (max-width: 920px) {
+    .hero-bg { background-position: center center; }
+  }
+  @keyframes slowZoom { from { transform: scale(1);} to { transform: scale(1.03);} }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(10,12,16,.45) 0%, rgba(10,12,16,.65) 55%, rgba(10,12,16,.98) 100%),
+      radial-gradient(ellipse 60% 50% at 30% 30%, rgba(58,182,224,.18), transparent 60%),
+      radial-gradient(ellipse 40% 40% at 80% 20%, rgba(240,107,44,.15), transparent 60%);
+  }
+  .hero::after {
+    content: "";
+    position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(255,255,255,.02) 0 1px, transparent 1px 3px);
+    opacity: .4;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 60px;
+    align-items: end;
+    min-height: calc(100vh - 220px);
+  }
+  @media (max-width: 920px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  /* ----- Dedicated mobile hero layout: image band on top, content below ----- */
+  @media (max-width: 920px) {
+    .hero {
+      padding: 0 0 60px;
+      min-height: auto;
+    }
+    .hero-bg {
+      position: relative;
+      height: 50vh;
+      min-height: 360px;
+      max-height: 480px;
+      width: 100%;
+      inset: auto;
+      transform: none;
+      animation: none;
+      background-position: center 30%;
+      margin-top: 78px; /* clear the fixed top bar */
+    }
+    .hero::before {
+      /* Now only sits over the image band, not the whole hero */
+      inset: 78px 0 auto 0;
+      height: 50vh;
+      min-height: 360px;
+      max-height: 480px;
+      background:
+        linear-gradient(180deg, rgba(10,12,16,.25) 0%, rgba(10,12,16,.45) 60%, rgba(10,12,16,1) 100%);
+    }
+    .hero::after { display: none; }
+    .hero-grid {
+      min-height: auto;
+      gap: 28px;
+      padding-top: 8px;
+      margin-top: -32px;
+    }
+    .hero-card {
+      padding: 24px 22px;
+    }
+  }
+  @media (max-width: 480px) {
+    .hero-bg { background-position: center 30%; height: 44vh; min-height: 320px; }
+    .hero::before { height: 44vh; min-height: 320px; }
+  }
+
+  .hero-headline {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: clamp(48px, 7.2vw, 104px);
+    line-height: .95;
+    letter-spacing: -0.02em;
+    margin-top: 28px;
+    font-variation-settings: "opsz" 144, "SOFT" 50;
+  }
+  .hero-headline em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--cyan);
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+  }
+  .hero-headline .accent {
+    display: inline-block;
+    position: relative;
+  }
+  .hero-headline .accent::after {
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: 8%;
+    height: 6px;
+    background: var(--orange);
+    z-index: -1;
+    transform: skewX(-12deg);
+  }
+
+  .hero-sub {
+    margin-top: 28px;
+    font-size: 18px;
+    max-width: 540px;
+    color: var(--ink-dim);
+    line-height: 1.6;
+  }
+  .hero-cta-row {
+    margin-top: 36px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .hero-meta {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    color: var(--ink-dim);
+    font-size: 13px;
+  }
+  .hero-meta-item { display: flex; align-items: center; gap: 8px; }
+  .hero-meta-item svg { color: var(--cyan); }
+
+  /* Trust card on hero right */
+  .hero-card {
+    background: rgba(20,24,31,.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    box-shadow: var(--shadow-2);
+  }
+  .hero-card-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    color: var(--orange);
+    text-transform: uppercase;
+  }
+  .hero-card h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 14px;
+    line-height: 1.2;
+  }
+  .hero-card-list { margin-top: 20px; display: flex; flex-direction: column; gap: 14px; }
+  .hero-card-list li {
+    list-style: none;
+    display: flex; gap: 12px;
+    font-size: 14px;
+    color: var(--ink-dim);
+  }
+  .hero-card-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 18px; height: 18px;
+    background: var(--orange);
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3E%3Cpath d='M6.5 10.5L4 8l-1 1 3.5 3.5L13 6l-1-1z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    margin-top: 2px;
+  }
+
+  /* Meet the founder card */
+  .founder-card {
+    display: grid;
+    grid-template-columns: minmax(180px, 220px) 1fr;
+    gap: 28px;
+    align-items: center;
+    overflow: hidden;
+  }
+  .founder-photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.1);
+    background: var(--bg-2);
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+  }
+  .founder-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(10,12,16,.55));
+    pointer-events: none;
+  }
+  .founder-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .founder-copy h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 14px;
+    line-height: 1.12;
+  }
+  .founder-copy h3 em {
+    font-style: italic;
+    color: var(--cyan);
+  }
+  .founder-copy p {
+    margin-top: 14px;
+    color: var(--ink-dim);
+    font-size: 14.5px;
+    line-height: 1.65;
+  }
+  .founder-signature {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .founder-signature strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .founder-signature span {
+    display: block;
+    margin-top: 3px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .founder-badge {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba(240,107,44,.24), rgba(58,182,224,.18));
+    border: 1px solid rgba(255,255,255,.1);
+    color: var(--orange);
+  }
+  @media (max-width: 560px) {
+    .founder-card {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .founder-photo {
+      width: 100%;
+      margin-inline: 0;
+      aspect-ratio: 4 / 4.5;
+    }
+    .founder-copy h3 { font-size: 28px; }
+  }
+
+  /* Marquee strip */
+  .marquee {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-2);
+    overflow: hidden;
+    padding: 22px 0;
+  }
+  .marquee-track {
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    align-items: center;
+  }
+  .marquee-track span {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-dim);
+    white-space: nowrap;
+  }
+  .marquee-track .dot {
+    width: 6px; height: 6px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- Sections ---------- */
+  section.section { padding: 120px 0; position: relative; }
+  .section-header { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; max-width: 760px; margin-bottom: 72px; }
+  .section-header h2 {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: clamp(38px, 5vw, 72px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .section-header h2 em { font-style: italic; color: var(--cyan); font-weight: 400; }
+  .section-header p { color: var(--ink-dim); font-size: 17px; max-width: 620px; }
+
+  /* ---------- Why us / value props ---------- */
+  .values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--surface);
+  }
+  @media (max-width: 1000px) { .values { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px)  { .values { grid-template-columns: 1fr; } }
+
+  .value {
+    padding: 36px 28px;
+    border-right: 1px solid var(--line);
+    position: relative;
+    transition: background .3s;
+  }
+  .value:last-child { border-right: none; }
+  .value:hover { background: var(--surface-2); }
+  @media (max-width: 1000px) {
+    .value:nth-child(2) { border-right: none; }
+    .value:nth-child(1), .value:nth-child(2) { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 560px) {
+    .value { border-right: none; border-bottom: 1px solid var(--line); }
+    .value:last-child { border-bottom: none; }
+  }
+  .value-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--orange);
+    letter-spacing: .2em;
+  }
+  .value-icon {
+    margin-top: 18px;
+    width: 44px; height: 44px;
+    display: grid; place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(58,182,224,.15), rgba(58,182,224,.04));
+    border: 1px solid rgba(58,182,224,.2);
+    color: var(--cyan);
+  }
+  .value h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 24px;
+    line-height: 1.25;
+  }
+  .value p {
+    margin-top: 12px;
+    color: var(--ink-dim);
+    font-size: 14.5px;
+  }
+
+  /* ---------- Films comparison ---------- */
+  .films-section { background: var(--bg-2); border-block: 1px solid var(--line); }
+  .films {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 880px) { .films { grid-template-columns: 1fr; } }
+
+  .film {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 40px 36px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color .35s, transform .35s;
+  }
+  .film::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--line-2);
+    transition: background .35s;
+  }
+  .film:hover { transform: translateY(-4px); border-color: var(--line-2); }
+  .film.featured { border-color: rgba(240,107,44,.35); }
+  .film.featured::before { background: linear-gradient(90deg, var(--orange), var(--cyan)); }
+
+  .film-tag {
+    position: absolute; top: 20px; right: 20px;
+    font-family: var(--mono); font-size: 10px; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--orange);
+    padding: 6px 10px;
+    border: 1px solid rgba(240,107,44,.4);
+    border-radius: 100px;
+    background: rgba(240,107,44,.08);
+  }
+
+  .film-name { font-family: var(--mono); font-size: 12px; color: var(--ink-mute); letter-spacing: .2em; text-transform: uppercase; }
+  .film-title {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: 44px;
+    line-height: 1;
+    margin-top: 12px;
+    letter-spacing: -0.02em;
+  }
+  .film-title em { font-style: italic; color: var(--cyan); }
+  .film p.film-desc {
+    margin-top: 18px;
+    color: var(--ink-dim);
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 460px;
+  }
+
+  .film-features {
+    margin-top: 32px;
+    list-style: none;
+    display: flex; flex-direction: column;
+    gap: 0;
+  }
+  .film-features li {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 14px;
+    color: var(--ink-dim);
+  }
+  .film-features li:last-child { border-bottom: 1px solid var(--line); }
+  .film-features li strong { color: var(--ink); font-weight: 500; }
+  .check-y, .check-n { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; }
+  .check-y { color: var(--cyan); }
+  .check-n { color: var(--ink-mute); }
+
+  .film-foot { margin-top: 30px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;}
+  .film .btn { width: 100%; justify-content: center; }
+
+  /* ---------- Process ---------- */
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  @media (max-width: 880px) { .process { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .process { grid-template-columns: 1fr; } }
+  .step { background: var(--bg); padding: 36px 28px; }
+  .step-num {
+    font-family: var(--serif);
+    font-size: 76px;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--orange);
+    font-style: italic;
+  }
+  .step h4 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 18px;
+    line-height: 1.2;
+  }
+  .step p { color: var(--ink-dim); font-size: 14px; margin-top: 10px; }
+
+  /* ---------- Gallery ---------- */
+  .gallery-section { background: var(--bg-2); border-block: 1px solid var(--line); }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 880px) {
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .gal-1 { grid-column: span 2; }
+  }
+  @media (max-width: 560px) {
+    .gallery { grid-template-columns: 1fr; }
+    .gal-1 { grid-column: span 1; }
+  }
+  .gal {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    aspect-ratio: 3 / 4;
+    transition: transform .5s ease;
+  }
+  .gal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    transition: transform .6s ease;
+  }
+  .gal::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,.85));
+    opacity: .9;
+    transition: opacity .35s;
+    pointer-events: none;
+  }
+  .gal:hover img { transform: scale(1.04); }
+  .gal:hover::after { opacity: 1; }
+
+  .gal-label {
+    position: absolute; bottom: 18px; left: 18px; right: 18px;
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 2;
+    line-height: 1.4;
+  }
+
+  /* ---------- Testimonials ---------- */
+  .reviews-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 22px 28px;
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    margin-bottom: 48px;
+    width: fit-content;
+  }
+  .reviews-header .g-logo {
+    width: 32px; height: 32px;
+    flex-shrink: 0;
+  }
+  .reviews-header .stars {
+    color: #f5b400;
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+  .reviews-header .rating-text {
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--ink-dim);
+    line-height: 1.3;
+  }
+  .reviews-header .rating-text strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .reviews-divider {
+    width: 1px; height: 32px;
+    background: var(--line-2);
+  }
+  @media (max-width: 560px) {
+    .reviews-header { width: 100%; padding: 18px 22px; gap: 14px; border-radius: var(--radius-lg); }
+    .reviews-divider { display: none; }
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 980px) { .testimonials { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .testimonials { grid-template-columns: 1fr; } }
+
+  .testimonial {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 28px 26px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    position: relative;
+    transition: border-color .3s, transform .3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial:hover { border-color: var(--line-2); transform: translateY(-3px); }
+  .testimonial-stars {
+    color: #f5b400;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .testimonial blockquote {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 16px;
+    letter-spacing: -.005em;
+    flex-grow: 1;
+  }
+  .testimonial-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 22px;
+  }
+  .testimonial-images .ti {
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--bg);
+  }
+  .testimonial-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+  }
+  .testimonial-images .ti:hover img { transform: scale(1.06); }
+  .testimonial-author {
+    margin-top: 22px;
+    display: flex; align-items: center; gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .author-avatar {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cyan), var(--orange));
+    display: grid; place-items: center;
+    font-weight: 600; font-size: 14px; color: #fff;
+    flex-shrink: 0;
+  }
+  .author-meta { display: flex; flex-direction: column; line-height: 1.2; }
+  .author-meta .n { font-size: 14px; font-weight: 500; }
+  .author-meta .c { font-size: 12px; color: var(--ink-mute); margin-top: 3px; display: flex; align-items: center; gap: 6px; }
+  .author-meta .c svg { color: #4285F4; }
+
+  /* ---------- FAQ ---------- */
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+  }
+  @media (max-width: 920px) { .faq-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+  .faq-list { display: flex; flex-direction: column; }
+  .faq {
+    border-top: 1px solid var(--line);
+    padding: 22px 0;
+    cursor: pointer;
+    transition: padding .3s;
+  }
+  .faq:last-child { border-bottom: 1px solid var(--line); }
+  .faq summary {
+    list-style: none;
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 24px;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -.005em;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary .plus {
+    width: 28px; height: 28px;
+    flex-shrink: 0;
+    border: 1px solid var(--line-2);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    transition: transform .35s, background .35s;
+    color: var(--ink-dim);
+  }
+  .faq[open] summary .plus { transform: rotate(45deg); background: var(--orange); border-color: var(--orange); color: #fff; }
+  .faq-answer {
+    margin-top: 14px;
+    color: var(--ink-dim);
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 600px;
+  }
+
+  /* ---------- Final CTA / Contact ---------- */
+  .cta-section {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .cta-section::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -2;
+    background-image: url('images/audi-s5.jpeg');
+    background-size: cover;
+    background-position: center 60%;
+    filter: brightness(.4) saturate(.85);
+  }
+  .cta-section::after {
+    content: "";
+    position: absolute; inset: 0; z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(10,12,16,.88), rgba(10,12,16,.96)),
+      radial-gradient(ellipse 50% 40% at 30% 50%, rgba(240,107,44,.18), transparent 70%);
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 60px;
+    align-items: start;
+  }
+  @media (max-width: 920px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  .contact-info .eyebrow { margin-bottom: 18px; }
+  .contact-info h2 {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: .98;
+    letter-spacing: -0.02em;
+  }
+  .contact-info h2 em { font-style: italic; color: var(--cyan); font-weight: 400; }
+  .contact-info p.lede {
+    margin-top: 22px;
+    color: var(--ink-dim);
+    font-size: 17px;
+    max-width: 460px;
+    line-height: 1.6;
+  }
+
+  .contact-methods {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .contact-method {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 22px;
+    background: rgba(20,24,31,.6);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: border-color .25s, background .25s, transform .25s;
+  }
+  .contact-method:hover {
+    border-color: rgba(240,107,44,.35);
+    background: rgba(20,24,31,.8);
+    transform: translateY(-2px);
+  }
+  .contact-icon {
+    width: 42px; height: 42px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(240,107,44,.18), rgba(240,107,44,.04));
+    border: 1px solid rgba(240,107,44,.25);
+    color: var(--orange);
+  }
+  .contact-method-text { display: flex; flex-direction: column; line-height: 1.3; }
+  .contact-method-text .lbl {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .contact-method-text .val {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-top: 4px;
+  }
+  .hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 15px;
+    margin-top: 6px;
+    border-top: 1px dashed rgba(255,255,255,.06);
+    padding-top: 6px;
+  }
+  .hours-row:first-of-type {
+    border-top: none;
+    padding-top: 4px;
+  }
+  .hours-row .hours-day {
+    color: var(--ink-dim);
+    font-weight: 400;
+  }
+  .hours-row .hours-time {
+    color: var(--ink);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Contact form */
+  .contact-form-card {
+    background: rgba(20,24,31,.78);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-2);
+  }
+  @media (max-width: 480px) { .contact-form-card { padding: 28px 24px; } }
+  .contact-form-card h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .contact-form-card .form-sub {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--ink-dim);
+  }
+  .contact-form {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  @media (max-width: 540px) { .form-row { grid-template-columns: 1fr; } }
+
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--ink);
+    background: rgba(10,12,16,.6);
+    border: 1px solid var(--line-2);
+    border-radius: 10px;
+    padding: 14px 16px;
+    width: 100%;
+    transition: border-color .2s, background .2s;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .field input::placeholder,
+  .field textarea::placeholder { color: var(--ink-mute); }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+    background: rgba(10,12,16,.85);
+  }
+  .field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23aab1bd' stroke-width='1.6'%3E%3Cpath d='M3 6l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+    padding-right: 40px;
+  }
+  .field textarea {
+    resize: vertical;
+    min-height: 110px;
+    font-family: var(--sans);
+  }
+  .form-submit {
+    margin-top: 6px;
+    width: 100%;
+    justify-content: center;
+    padding: 17px 26px;
+  }
+  .form-foot {
+    font-size: 12px;
+    color: var(--ink-mute);
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  /* success state */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .form-success.show { display: block; }
+  .form-success .tick {
+    width: 56px; height: 56px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cyan), var(--orange));
+    display: grid; place-items: center;
+    color: #fff;
+  }
+  .form-success h4 {
+    font-family: var(--serif); font-weight: 400; font-size: 24px;
+  }
+  .form-success p { margin-top: 10px; color: var(--ink-dim); font-size: 14px; }
+  .contact-form.hide { display: none; }
+
+  /* ---------- Footer ---------- */
+  footer { background: #07080b; padding: 60px 0 40px; border-top: 1px solid var(--line); }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  @media (max-width: 880px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+
+  .foot-brand .brand img { width: 52px; height: 52px; }
+  .foot-brand p { color: var(--ink-dim); font-size: 14px; margin-top: 18px; max-width: 280px; }
+  .foot-col h5 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 18px;
+  }
+  .foot-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .foot-col a { color: var(--ink-dim); font-size: 14px; transition: color .2s; }
+  .foot-col a:hover { color: var(--ink); }
+  .foot-bottom {
+    margin-top: 60px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--ink-mute);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .mobile-cta {
+    display: none;
+    position: fixed; bottom: 0; left: 0; right: 0;
+    z-index: 60;
+    padding: 12px 16px;
+    background: rgba(7,8,11,.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid var(--line);
+    gap: 10px;
+  }
+  .mobile-cta .btn { flex: 1; padding: 14px 18px; font-size: 14px; justify-content: center; }
+  @media (max-width: 720px) {
+    .mobile-cta { display: flex; }
+    body { padding-bottom: 80px; }
+  }
+
+  /* ---------- Reveal animation ---------- */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ---------- Cookie banner ---------- */
+  .cookie-banner {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 70;
+    max-width: 580px;
+    margin-inline: auto;
+    background: rgba(14, 17, 23, .95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: var(--radius-lg);
+    padding: 24px 26px;
+    box-shadow: 0 24px 80px rgba(0,0,0,.6);
+    transform: translateY(120%);
+    opacity: 0;
+    transition: transform .5s cubic-bezier(.16,1,.3,1), opacity .4s ease;
+    pointer-events: none;
+  }
+  .cookie-banner.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .cookie-banner.with-mobile-cta { bottom: 86px; }
+  .cookie-eyebrow {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .cookie-eyebrow svg { color: var(--orange); }
+  .cookie-banner h4 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 19px;
+    margin-top: 10px;
+    line-height: 1.25;
+    color: var(--ink);
+  }
+  .cookie-banner p {
+    margin-top: 8px;
+    font-size: 13.5px;
+    color: var(--ink-dim);
+    line-height: 1.55;
+  }
+  .cookie-banner p a {
+    color: var(--cyan);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .cookie-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .cookie-btn {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 100px;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform .25s, background .25s, border-color .25s;
+  }
+  .cookie-btn-reject {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line-2);
+  }
+  .cookie-btn-reject:hover {
+    border-color: var(--ink);
+    transform: translateY(-1px);
+  }
+  .cookie-btn-accept {
+    background: var(--orange);
+    color: #fff;
+    box-shadow: 0 6px 20px -6px rgba(240,107,44,.6);
+  }
+  .cookie-btn-accept:hover {
+    background: var(--orange-2);
+    transform: translateY(-1px);
+  }
+  @media (max-width: 480px) {
+    .cookie-banner { padding: 20px 22px; bottom: 12px; left: 12px; right: 12px; }
+    .cookie-banner.with-mobile-cta { bottom: 82px; }
+    .cookie-banner h4 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6ZTX5JF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#" class="brand" aria-label="DOS Tints home">
+      <img src="images/logo.jpeg" alt="DOS Tints logo" />
+      <div class="brand-text">
+        <span class="b1">DOS Tints</span>
+        <span class="b2">Premium · Window Film</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#films">Films</a>
+      <a href="#process">Process</a>
+      <a href="#gallery">Work</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="tel:07599000899" class="nav-phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>07599 000 899</span>
+      </a>
+      <a href="#book" class="btn btn-primary">Book Now <span class="arrow">→</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">Window Tinting · Enfield</div>
+      <h1 class="hero-headline">
+        Tint that <em>belongs</em><br />
+        on the <span class="accent">car you drive.</span>
+      </h1>
+      <p class="hero-sub">
+        Bubble-free, edge-perfect, dealer-grade installs in Enfield, London. We work on Audi, BMW, Mercedes, Porsche, Range Rover and beyond — with film engineered to outlive the car it's fitted to.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#book" class="btn btn-primary">Get an instant quote <span class="arrow">→</span></a>
+        <a href="#films" class="btn btn-ghost">Compare films</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          Lifetime warranty
+        </div>
+        <div class="hero-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          UK-legal options
+        </div>
+        <div class="hero-meta-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          Same-day fitting
+        </div>
+      </div>
+    </div>
+
+    <aside class="hero-card founder-card reveal" aria-labelledby="meet-founder-title">
+      <div class="founder-photo">
+        <img src="images/radu-founder.jpeg" alt="Radu, founder of DOS Tints, inside the DOS Tints workshop" loading="eager" />
+      </div>
+      <div class="founder-copy">
+        <div class="hero-card-title">Meet the founder</div>
+        <h3 id="meet-founder-title">The specialist behind <em>DOS Tints</em>.</h3>
+        <p>
+          DOS Tints is led by Radu, the specialist behind the workmanship. Every booking is handled with honest advice, careful prep and the same edge-perfect finish he would expect on his own car.
+        </p>
+        <div class="founder-signature">
+          <div>
+            <strong>Radu</strong>
+            <span>Founder · DOS Tints</span>
+          </div>
+          <div class="founder-badge" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L4 7v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7l-8-5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Audi</span><span class="dot"></span>
+    <span>BMW</span><span class="dot"></span>
+    <span>Mercedes-AMG</span><span class="dot"></span>
+    <span>Porsche</span><span class="dot"></span>
+    <span>Range Rover</span><span class="dot"></span>
+    <span>Bentley</span><span class="dot"></span>
+    <span>Tesla</span><span class="dot"></span>
+    <span>Lexus</span><span class="dot"></span>
+    <span>Jaguar</span><span class="dot"></span>
+    <span>Maserati</span><span class="dot"></span>
+    <!-- duplicate for seamless scroll -->
+    <span>Audi</span><span class="dot"></span>
+    <span>BMW</span><span class="dot"></span>
+    <span>Mercedes-AMG</span><span class="dot"></span>
+    <span>Porsche</span><span class="dot"></span>
+    <span>Range Rover</span><span class="dot"></span>
+    <span>Bentley</span><span class="dot"></span>
+    <span>Tesla</span><span class="dot"></span>
+    <span>Lexus</span><span class="dot"></span>
+    <span>Jaguar</span><span class="dot"></span>
+    <span>Maserati</span><span class="dot"></span>
+  </div>
+</div>
+
+<!-- VALUE PROPS -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="eyebrow">Why DOS Tints</div>
+      <h2>Detailing-grade <em>tinting,</em><br />without the compromises.</h2>
+      <p>Most shops fit film. We fit film like it was the last car they'll ever touch — because returning customers built this business, not Google ads.</p>
+    </div>
+
+    <div class="values reveal">
+      <div class="value">
+        <div class="value-num">01</div>
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+        </div>
+        <h3>Hand-cut, edge-perfect</h3>
+        <p>Every film is hand-cut and shaped by a specialist's eye — finished off the glass, never on it. The craft you can't programme into a machine.</p>
+      </div>
+      <div class="value">
+        <div class="value-num">02</div>
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg>
+        </div>
+        <h3>True heat rejection</h3>
+        <p>Ceramic options reject up to 88% of solar heat. Cooler interior, less load on AC, leather that actually lasts.</p>
+      </div>
+      <div class="value">
+        <div class="value-num">03</div>
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L4 7v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7l-8-5z"/></svg>
+        </div>
+        <h3>Lifetime warranty</h3>
+        <p>No bubbling. No purpling. No peeling. Our films come with a written lifetime guarantee on every install.</p>
+      </div>
+      <div class="value">
+        <div class="value-num">04</div>
+        <div class="value-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3>Booked, fitted, gone</h3>
+        <p>Most cars in and out the same day. Climate-controlled bay, dust-free finish, no waiting list theatre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILMS -->
+<section class="section films-section" id="films">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="eyebrow">Choose your film</div>
+      <h2>Two specs.<br /><em>One uncompromising</em> install.</h2>
+      <p>Every job — whether you're saving on a daily or speccing out a flagship — gets the same fitter, the same prep, and the same standard of finish.</p>
+    </div>
+
+    <div class="films">
+      <div class="film reveal">
+        <div class="film-name">Tier 01</div>
+        <h3 class="film-title">Standard <em>Film</em></h3>
+        <p class="film-desc">Premium dyed and metallised film for owners who want the look, the privacy, and serious UV protection — at a sharp price point.</p>
+
+        <ul class="film-features">
+          <li><strong>UV rejection</strong> <span class="check-y">99%</span></li>
+          <li><strong>Heat rejection</strong> <span class="check-y">~45%</span></li>
+          <li><strong>Glare reduction</strong> <span class="check-y">Yes</span></li>
+          <li><strong>Signal-safe (radio / GPS)</strong> <span class="check-y">Yes</span></li>
+          <li><strong>Fade resistance</strong> <span class="check-y">High</span></li>
+          <li><strong>Lifetime warranty</strong> <span class="check-y">Included</span></li>
+        </ul>
+
+        <div class="film-foot">
+          <a href="#book" class="btn btn-ghost">Get a quote <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <div class="film featured reveal">
+        <span class="film-tag">Most chosen</span>
+        <div class="film-name">Tier 02</div>
+        <h3 class="film-title">Ceramic <em>Film</em></h3>
+        <p class="film-desc">Nano-ceramic technology — the spec we'd put on our own car. Maximum heat rejection without any of the metallic interference.</p>
+
+        <ul class="film-features">
+          <li><strong>UV rejection</strong> <span class="check-y">99%</span></li>
+          <li><strong>Heat rejection</strong> <span class="check-y">Up to 88%</span></li>
+          <li><strong>Infrared rejection</strong> <span class="check-y">Up to 95%</span></li>
+          <li><strong>Signal-safe (radio / GPS)</strong> <span class="check-y">Yes</span></li>
+          <li><strong>Optical clarity</strong> <span class="check-y">Crystal</span></li>
+          <li><strong>Lifetime warranty</strong> <span class="check-y">Included</span></li>
+        </ul>
+
+        <div class="film-foot">
+          <a href="#book" class="btn btn-primary">Book Ceramic <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="eyebrow">How it works</div>
+      <h2>Four steps.<br />No <em>guesswork.</em></h2>
+      <p>From the moment you message us to the moment you drive off, here's exactly what happens.</p>
+    </div>
+
+    <div class="process reveal">
+      <div class="step">
+        <div class="step-num">i.</div>
+        <h4>Quote</h4>
+        <p>Send a photo of your car or just the make and model. We reply with a fixed all-in price — no hidden charges.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">ii.</div>
+        <h4>Book</h4>
+        <p>Pick a slot that suits you. £25 deposit secures the booking and goes towards the final price.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iii.</div>
+        <h4>Fit</h4>
+        <p>Glass cleaned, decontaminated, and tinted in our climate-controlled bay. Hand-cut, hand-installed, finished to the millimetre.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">iv.</div>
+        <h4>Drive</h4>
+        <p>Walk-around with you, aftercare guide handed over, lifetime warranty registered. Done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery-section" id="gallery">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="eyebrow">Recent work</div>
+      <h2>The <em>portfolio</em><br />speaks louder.</h2>
+      <p>A small slice of what's left the bay this month. Every car here was tinted by us — no stock photography.</p>
+    </div>
+
+    <div class="gallery reveal">
+      <div class="gal gal-1">
+        <img src="images/audi-s5.jpeg" alt="Audi S5 with all-round ceramic tint outside the DOS Tints workshop" loading="lazy" />
+        <span class="gal-label">Audi S5 · Ceramic 20%</span>
+      </div>
+      <div class="gal gal-2">
+        <img src="images/audi-rs7.jpeg" alt="Audi RS7 with carbon bonnet and chameleon windscreen tint outside the DOS Tints shop" loading="lazy" />
+        <span class="gal-label">Audi RS7 · Chameleon windscreen</span>
+      </div>
+      <div class="gal gal-3">
+        <img src="images/mercedes-a.jpeg" alt="Mercedes A-Class AMG with standard tint" loading="lazy" />
+        <span class="gal-label">Mercedes A-Class AMG · Standard 35%</span>
+      </div>
+      <div class="gal">
+        <img src="images/bmw-540i.jpeg" alt="BMW 540i xDrive in dark blue with all-round tint" loading="lazy" />
+        <span class="gal-label">BMW 540i xDrive · Ceramic all round</span>
+      </div>
+      <div class="gal">
+        <img src="images/skoda-vrs.jpeg" alt="Blue Skoda Octavia vRS with chameleon purple windscreen tint" loading="lazy" />
+        <span class="gal-label">Skoda Octavia vRS · Chameleon</span>
+      </div>
+      <div class="gal">
+        <img src="images/bmw-x3.jpeg" alt="Black BMW X3 M40i parked outside the DOS Tints shop" loading="lazy" />
+        <span class="gal-label">BMW X3 M40i · Ceramic 5%</span>
+      </div>
+      <div class="gal">
+        <img src="images/land-rover-defender.jpeg" alt="White Land Rover Defender with tinted windows outside the DOS Tints shop" loading="lazy" />
+        <span class="gal-label">Land Rover Defender · Ceramic 20%</span>
+      </div>
+      <div class="gal">
+        <img src="images/tesla-model3.jpeg" alt="White Tesla Model 3 with ceramic tint" loading="lazy" />
+        <span class="gal-label">Tesla Model 3 · Ceramic 20%</span>
+      </div>
+      <div class="gal">
+        <img src="images/bmw-shop.jpeg" alt="BMW M140i parked outside the DOS Tints shop after rear ceramic tint" loading="lazy" />
+        <span class="gal-label">BMW M140i · Ceramic 5% rear</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-header reveal">
+      <div class="eyebrow">Client reviews</div>
+      <h2>Cars get spec'd.<br />Owners <em>get loud.</em></h2>
+    </div>
+
+    <div class="reviews-header reveal">
+      <svg class="g-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/>
+        <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 16 19 13 24 13c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
+        <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.5 2.4-7.2 2.4-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/>
+        <path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C41.4 35.1 44 30 44 24c0-1.3-.1-2.6-.4-3.9z"/>
+      </svg>
+      <div class="stars">★★★★★</div>
+      <div class="reviews-divider"></div>
+      <div class="rating-text">
+        <strong>5.0</strong> · Rated by <strong>118+</strong> happy customers on Google
+      </div>
+    </div>
+
+    <div class="testimonials reveal">
+
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Excellent car window tinting service. The workmanship was of a very high standard, with precise attention to detail and a professional finish. Radu, the manager, was courteous, knowledgeable, and helpful at every stage. Both my car and my girlfriend's car were completed at the same time. Highly recommend Dos Tints to anyone seeking a reliable and professional service."</blockquote>
+        <div class="testimonial-images">
+          <div class="ti"><img src="images/reviews/mihai1.jpg" alt="Mihai's car after window tinting" loading="lazy" /></div>
+          <div class="ti"><img src="images/reviews/mihai2.jpg" alt="Mihai's car after window tinting" loading="lazy" /></div>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">MD</div>
+          <div class="author-meta">
+            <span class="n">Mihai Dogot</span>
+            <span class="c">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Verified Google review
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Came for rear and front tint and I'm beyond satisfied with the work and the quality provided. Very professional and efficient, definitely coming back for windscreen and taillight tints."</blockquote>
+        <div class="testimonial-images">
+          <div class="ti"><img src="images/reviews/Robert1.jpg" alt="Robert's car after window tinting" loading="lazy" /></div>
+          <div class="ti"><img src="images/reviews/Robert2.jpg" alt="Robert's car after window tinting" loading="lazy" /></div>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">RD</div>
+          <div class="author-meta">
+            <span class="n">Robert Dabija</span>
+            <span class="c">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Verified Google review
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Could not recommend this business more. Customer service transformed this installation into an entire experience. Got me in on short notice, very helpful advice when choosing, done for a very fair price, and the turnover time was good. I would recommend this business to anyone looking for tints!"</blockquote>
+        <div class="testimonial-images">
+          <div class="ti"><img src="images/reviews/Ismael1.jpg" alt="Ismael's car after window tinting" loading="lazy" /></div>
+          <div class="ti"><img src="images/reviews/Ismael2.jpg" alt="Ismael's car after window tinting" loading="lazy" /></div>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">IS</div>
+          <div class="author-meta">
+            <span class="n">Ismael</span>
+            <span class="c">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Verified Google review
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Had all-round window tints installed, 5% on the rears and couldn't be happier. Love the result and Radu was a lovely guy to talk to and get to know. Will definitely be back for more! Would recommend to anyone looking for some high quality tints."</blockquote>
+        <div class="testimonial-images">
+          <div class="ti"><img src="images/reviews/Elle-Louise1.jpg" alt="Elle-Louise's car after window tinting" loading="lazy" /></div>
+          <div class="ti"><img src="images/reviews/Elle-Louise2.jpg" alt="Elle-Louise's car after window tinting" loading="lazy" /></div>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">EL</div>
+          <div class="author-meta">
+            <span class="n">Elle-Louise</span>
+            <span class="c">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Verified Google review
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Had my 540i in for all-round tints and I could not be happier with the results. Very professional service with an extremely fast turn around from enquiry to completion. Could not ask for more. Fantastic job! Thanks again DOS Tints!"</blockquote>
+        <div class="testimonial-images">
+          <div class="ti"><img src="images/reviews/Dylan1.jpg" alt="Dylan's BMW 540i after window tinting" loading="lazy" /></div>
+          <div class="ti"><img src="images/reviews/Dylan2.jpg" alt="Dylan's BMW 540i after window tinting" loading="lazy" /></div>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">DB</div>
+          <div class="author-meta">
+            <span class="n">Dylan Blake</span>
+            <span class="c">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Verified Google review
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Had my car windscreen tinted — the best service I could've asked for. Even when I was running late it wasn't a problem. Standard of service was amazing, he couldn't do enough for me. Highly recommend and would definitely return in the future for anything I need doing."</blockquote>
+        <div class="testimonial-images">
+          <div class="ti"><img src="images/reviews/Sarah1.jpg" alt="Sarah's car after window tinting" loading="lazy" /></div>
+          <div class="ti"><img src="images/reviews/Sarah2.jpg" alt="Sarah's car after window tinting" loading="lazy" /></div>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">SA</div>
+          <div class="author-meta">
+            <span class="n">Sarah</span>
+            <span class="c">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Verified Google review
+            </span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background: var(--bg-2); border-block: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="reveal">
+        <div class="eyebrow">Frequently asked</div>
+        <h2 style="font-family: var(--serif); font-weight: 350; font-size: clamp(34px, 4.5vw, 56px); line-height: 1; letter-spacing: -0.02em; margin-top: 18px;">
+          Answers <em style="font-style: italic; color: var(--cyan);">before</em><br />you ask them.
+        </h2>
+        <p style="margin-top: 20px; color: var(--ink-dim);">Still got a question? Drop us a WhatsApp and we'll come back the same hour.</p>
+        <a href="tel:07599000899" class="btn btn-ghost" style="margin-top: 24px;">Call us · 07599 000 899</a>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq">
+          <summary>How long does a full tint take? <span class="plus">+</span></summary>
+          <div class="faq-answer">Most cars are 2–4 hours depending on shape and how many windows. We'll give you a precise time when you book, and you're welcome to wait or drop the car off.</div>
+        </details>
+        <details class="faq">
+          <summary>What's the difference between standard and ceramic? <span class="plus">+</span></summary>
+          <div class="faq-answer">Standard film is dyed and gives you the look, privacy and 99% UV protection. Ceramic uses nano-particles to also reject heat and infrared — meaning a noticeably cooler cabin, no AC strain, and zero signal interference. If you live in the car, ceramic earns its keep.</div>
+        </details>
+        <details class="faq">
+          <summary>Is window tinting legal in the UK? <span class="plus">+</span></summary>
+          <div class="faq-answer">Yes — with limits. Front windscreen must let through at least 75% of light, and front side windows at least 70%. Rear windows have no legal limit. We'll always advise you on what's road-legal vs show-only.</div>
+        </details>
+        <details class="faq">
+          <summary>Do you offer a warranty? <span class="plus">+</span></summary>
+          <div class="faq-answer">Every install comes with a written lifetime warranty against bubbling, peeling, cracking and discolouration. Registered to you, transferable on resale.</div>
+        </details>
+        <details class="faq">
+          <summary>How soon can you book me in? <span class="plus">+</span></summary>
+          <div class="faq-answer">Often the same week — sometimes the same day if there's a cancellation. Drop us your reg and preferred date and we'll come straight back with options.</div>
+        </details>
+        <details class="faq">
+          <summary>Will the tint affect my heated rear window? <span class="plus">+</span></summary>
+          <div class="faq-answer">No. Our films are safe over heated elements, antennae and parking sensors. Ceramic films are also non-metallic, so no impact on radio, GPS or keyless entry.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA / CONTACT -->
+<section class="cta-section" id="book">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Ready to see <em>your car</em> the way it was meant to look?</h2>
+        <p class="lede">Send us your make, model and the shade you're after. We'll come back with a fixed price within the hour — no upsells, no surprises.</p>
+
+        <div class="contact-methods">
+          <a href="tel:07599000899" class="contact-method">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-method-text">
+              <span class="lbl">Call us</span>
+              <span class="val">07599 000 899</span>
+            </div>
+          </a>
+
+          <a href="mailto:dos.tints1@gmail.com" class="contact-method">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-method-text">
+              <span class="lbl">Email</span>
+              <span class="val">dos.tints1@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://wa.me/447599000899" target="_blank" rel="noopener" class="contact-method">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </div>
+            <div class="contact-method-text">
+              <span class="lbl">WhatsApp</span>
+              <span class="val">Message us — fastest reply</span>
+            </div>
+          </a>
+
+          <div class="contact-method" style="cursor: default;">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-method-text">
+              <span class="lbl">Visit</span>
+              <span class="val">836-840 Hertford Road, Enfield EN3 6UE</span>
+            </div>
+          </div>
+
+          <div class="contact-method" style="cursor: default; align-items: flex-start;">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-method-text" style="flex: 1;">
+              <span class="lbl">Opening Hours</span>
+              <div class="hours-row"><span class="hours-day">Mon – Fri</span><span class="hours-time">9am – 7pm</span></div>
+              <div class="hours-row"><span class="hours-day">Sat – Sun</span><span class="hours-time">9am – 5pm</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal">
+        <h3>Get an instant quote</h3>
+        <p class="form-sub">Fill in a few details — we usually reply within the hour during opening times.</p>
+
+        <form class="contact-form" id="dosContactForm" action="send-enquiry.php" method="post">
+          <!-- Honeypot anti-spam field, hidden from real users -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="field">
+              <label for="cf-phone">Phone</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="07…" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-vehicle">Vehicle</label>
+              <input type="text" id="cf-vehicle" name="vehicle" placeholder="e.g. Audi S5 2018" required />
+            </div>
+            <div class="field">
+              <label for="cf-service">Service</label>
+              <select id="cf-service" name="service" required>
+                <option value="" disabled selected>Choose film</option>
+                <option value="Standard Film">Standard Film</option>
+                <option value="Ceramic Film">Ceramic Film</option>
+                <option value="Not sure yet">Not sure — advise me</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message <span style="color: var(--ink-mute); text-transform: none; letter-spacing: 0;">(optional)</span></label>
+            <textarea id="cf-message" name="message" placeholder="Which windows, preferred shade %, ideal date…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Request a quote <span class="arrow">→</span></button>
+          <div class="form-foot">By submitting you agree to be contacted about your enquiry. We don't share your details.</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="foot-brand">
+        <a href="#" class="brand">
+          <img src="images/logo.jpeg" alt="DOS Tints logo" />
+          <div class="brand-text">
+            <span class="b1">DOS Tints</span>
+            <span class="b2">Premium · Window Film</span>
+          </div>
+        </a>
+        <p>Specialist car window tinting. Lifetime warranty on every install. By appointment.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#films">Standard Film</a></li>
+          <li><a href="#films">Ceramic Film</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:07599000899">07599 000 899</a></li>
+          <li><a href="mailto:dos.tints1@gmail.com">dos.tints1@gmail.com</a></li>
+          <li><a href="#book">Book a slot</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Visit</h5>
+        <ul>
+          <li>836-840 Hertford Road</li>
+          <li>Enfield, EN3 6UE</li>
+          <li style="margin-top: 14px; color: var(--ink-mute); font-size: 12px; letter-spacing: .15em; text-transform: uppercase;">Opening Hours</li>
+          <li>Mon–Fri · 9am – 7pm</li>
+          <li>Sat–Sun · 9am – 5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 DOS Tints. All rights reserved.</span>
+      <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center;">
+        <a href="privacy.html" style="color: var(--ink-dim); font-size: 12px; text-decoration: none;">Privacy Policy</a>
+        <a href="terms.html" style="color: var(--ink-dim); font-size: 12px; text-decoration: none;">Terms of Service</a>
+        <a href="#" id="openCookieSettings" style="color: var(--ink-dim); font-size: 12px; text-decoration: none;">Cookie Settings</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-cta">
+  <a href="tel:07599000899" class="btn btn-ghost">Call</a>
+  <a href="#book" class="btn btn-primary">Book Now</a>
+</div>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <div class="cookie-eyebrow">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10c0-.46-.04-.92-.1-1.36a5.5 5.5 0 0 1-7.94-7.94c-.44-.06-.9-.1-1.36-.1z"/><circle cx="8.5" cy="8.5" r="0.5" fill="currentColor"/><circle cx="16" cy="14" r="0.5" fill="currentColor"/><circle cx="10" cy="14" r="0.5" fill="currentColor"/><circle cx="14" cy="18" r="0.5" fill="currentColor"/></svg>
+    Cookies on this site
+  </div>
+  <h4>We'd like your permission to use cookies.</h4>
+  <p>We use essential cookies to make the site work, and — only if you accept — analytics and advertising cookies to understand site performance and improve our service. You can change your mind any time. <a href="privacy.html#cookies">Read our policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-reject" id="cookieReject" type="button">Reject</button>
+    <button class="cookie-btn cookie-btn-accept" id="cookieAccept" type="button">Accept</button>
+  </div>
+</div>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Contact form: show 'sending' state on submit, then PHP handler takes over
+  (function () {
+    const form = document.getElementById('dosContactForm');
+    if (!form) return;
+
+    const submitBtn = form.querySelector('.form-submit');
+
+    form.addEventListener('submit', function () {
+      // Let the form submit naturally to PHP — just visually indicate progress
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.75';
+        submitBtn.innerHTML = 'Sending…';
+      }
+    });
+  })();
+
+  // Cookie consent management (UK PECR / GDPR compliant)
+  (function () {
+    const STORAGE_KEY = 'dos_cookie_consent';
+    const banner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('cookieAccept');
+    const rejectBtn = document.getElementById('cookieReject');
+    const settingsLink = document.getElementById('openCookieSettings');
+    const mobileCta = document.querySelector('.mobile-cta');
+
+    function showBanner() {
+      // If sticky mobile CTA is visible, lift the banner above it
+      if (mobileCta && getComputedStyle(mobileCta).display !== 'none') {
+        banner.classList.add('with-mobile-cta');
+      }
+      // Slight delay so it animates in cleanly after page load
+      setTimeout(() => banner.classList.add('show'), 600);
+    }
+
+    function hideBanner() {
+      banner.classList.remove('show');
+    }
+
+    function setConsent(value) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          status: value,        // 'accepted' or 'rejected'
+          timestamp: Date.now()
+        }));
+      } catch (e) { /* localStorage may be blocked */ }
+
+      // Send Consent Mode update signal to Google so GTM can react accordingly.
+      // GTM is already loaded — this just tells Google whether it's allowed
+      // to set cookies / send identifiable data.
+      updateGoogleConsent(value === 'accepted');
+      hideBanner();
+    }
+
+    function getConsent() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        // Re-ask after 12 months (good practice)
+        const oneYear = 365 * 24 * 60 * 60 * 1000;
+        if (Date.now() - parsed.timestamp > oneYear) return null;
+        return parsed.status;
+      } catch (e) { return null; }
+    }
+
+    function updateGoogleConsent(granted) {
+      // Update Google Consent Mode v2 state. GTM/GA4/Ads will respect this
+      // and enable or block storage accordingly.
+      if (typeof gtag !== 'function') return;
+      const state = granted ? 'granted' : 'denied';
+      gtag('consent', 'update', {
+        'ad_storage':         state,
+        'ad_user_data':       state,
+        'ad_personalization': state,
+        'analytics_storage':  state
+      });
+    }
+
+    // On load, decide whether to show the banner.
+    // GTM is ALREADY loaded with default-denied consent — we just decide
+    // whether to ask the user or use their saved choice.
+    const existing = getConsent();
+    if (existing === null) {
+      showBanner();
+    }
+    // If 'accepted' or 'rejected', the head-script already pushed the right
+    // default to Google — no further action needed on page load.
+
+    acceptBtn.addEventListener('click', () => setConsent('accepted'));
+    rejectBtn.addEventListener('click', () => setConsent('rejected'));
+
+    if (settingsLink) {
+      settingsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showBanner();
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

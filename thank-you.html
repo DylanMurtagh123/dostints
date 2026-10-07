@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank you — DOS Tints</title>
+<meta name="description" content="Your enquiry has been received. We'll be in touch shortly." />
+<meta name="robots" content="noindex" />
+
+<!-- Google Consent Mode v2 — default state DENIED until user accepts cookies.
+     This must run BEFORE Google Tag Manager so GTM respects the consent state. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Read any previously-saved consent choice from the main site
+  (function () {
+    var savedConsent = 'denied';
+    try {
+      var raw = localStorage.getItem('dos_cookie_consent');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        var oneYear = 365 * 24 * 60 * 60 * 1000;
+        if (parsed && parsed.status === 'accepted' && (Date.now() - parsed.timestamp) < oneYear) {
+          savedConsent = 'granted';
+        }
+      }
+    } catch (e) { /* localStorage blocked - default to denied */ }
+
+    gtag('consent', 'default', {
+      'ad_storage':            savedConsent,
+      'ad_user_data':          savedConsent,
+      'ad_personalization':    savedConsent,
+      'analytics_storage':     savedConsent,
+      'functionality_storage': 'granted',
+      'security_storage':      'granted',
+      'wait_for_update':       500
+    });
+  })();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N6ZTX5JF');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg-2: #0e1117;
+    --surface: #14181f;
+    --surface-2: #1a1f28;
+    --line: #232934;
+    --line-2: #2c333f;
+    --ink: #f4f5f7;
+    --ink-dim: #aab1bd;
+    --ink-mute: #6b7280;
+    --orange: #f06b2c;
+    --orange-2: #ff8246;
+    --cyan: #3ab6e0;
+    --cyan-2: #6fd2ee;
+    --serif: "Fraunces", Georgia, serif;
+    --sans: "Inter Tight", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, monospace;
+    --radius-lg: 22px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  .wrap { width: min(900px, 92vw); margin-inline: auto; }
+  .wrap-wide { width: min(1240px, 92vw); margin-inline: auto; }
+
+  /* Top bar */
+  header.topbar {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    background: rgba(10,12,16,.65);
+    border-bottom: 1px solid rgba(255,255,255,.05);
+  }
+  .topbar-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 44px; height: 44px; border-radius: 50%; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-text .b1 { font-family: var(--serif); font-weight: 600; font-size: 19px; letter-spacing: .02em; }
+  .brand-text .b2 { font-family: var(--mono); font-size: 10px; letter-spacing: .25em; color: var(--ink-dim); margin-top: 4px; text-transform: uppercase; }
+  .nav-phone { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 13px; color: var(--ink); }
+  .nav-phone svg { color: var(--orange); }
+  @media (max-width: 480px) {
+    .nav-phone span { display: none; }
+  }
+
+  /* Hero */
+  .ty-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .ty-section::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -2;
+    background-image: url('images/g-wagon-hero.png');
+    background-size: cover;
+    background-position: center 25%;
+    filter: brightness(.3) saturate(.85);
+  }
+  .ty-section::after {
+    content: "";
+    position: absolute; inset: 0; z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(10,12,16,.85), rgba(10,12,16,.95)),
+      radial-gradient(ellipse 60% 50% at 50% 30%, rgba(58,182,224,.15), transparent 70%),
+      radial-gradient(ellipse 40% 30% at 50% 80%, rgba(240,107,44,.12), transparent 70%);
+  }
+  .ty-section::before, .ty-section::after { pointer-events: none; }
+
+  .ty-card {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Animated tick */
+  .ty-tick {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cyan), var(--orange));
+    display: grid;
+    place-items: center;
+    color: #fff;
+    box-shadow: 0 24px 60px -16px rgba(58,182,224,.5);
+    position: relative;
+    animation: tickPop .7s cubic-bezier(.16,1,.3,1) both;
+  }
+  .ty-tick svg { width: 44px; height: 44px; animation: tickDraw .9s .25s cubic-bezier(.65,0,.45,1) both; }
+  .ty-tick svg path,
+  .ty-tick svg polyline {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: drawCheck .6s .35s cubic-bezier(.65,0,.45,1) forwards;
+  }
+  .ty-tick::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.08);
+    animation: pulseRing 2.4s ease-out infinite;
+  }
+  @keyframes tickPop {
+    0%   { opacity: 0; transform: scale(.4); }
+    60%  { opacity: 1; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes tickDraw {
+    from { transform: scale(.8); opacity: 0; }
+    to   { transform: scale(1);  opacity: 1; }
+  }
+  @keyframes drawCheck {
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes pulseRing {
+    0%   { transform: scale(1);    opacity: .8; }
+    100% { transform: scale(1.4);  opacity: 0; }
+  }
+
+  .ty-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--orange);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    opacity: 0;
+    animation: fadeUp .7s .3s ease both;
+  }
+  .ty-eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: linear-gradient(90deg, var(--orange), transparent);
+  }
+
+  .ty-headline {
+    font-family: var(--serif);
+    font-weight: 350;
+    font-size: clamp(40px, 6vw, 76px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    opacity: 0;
+    animation: fadeUp .7s .45s ease both;
+  }
+  .ty-headline em { font-style: italic; color: var(--cyan); font-weight: 400; }
+
+  .ty-sub {
+    margin-top: 22px;
+    font-size: 18px;
+    color: var(--ink-dim);
+    line-height: 1.6;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeUp .7s .6s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Next steps */
+  .next-steps {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: left;
+    opacity: 0;
+    animation: fadeUp .7s .75s ease both;
+  }
+  @media (max-width: 720px) { .next-steps { grid-template-columns: 1fr; } }
+
+  .step {
+    background: rgba(20,24,31,.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-lg);
+    padding: 24px 22px;
+  }
+  .step-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--orange);
+  }
+  .step h3 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 14px;
+    line-height: 1.3;
+  }
+  .step p {
+    margin-top: 6px;
+    font-size: 13.5px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+
+  /* CTAs */
+  .ty-actions {
+    margin-top: 44px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeUp .7s .9s ease both;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 26px;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .01em;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: transform .25s, box-shadow .25s, background .25s, border-color .25s;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--orange);
+    color: #fff;
+    box-shadow: 0 10px 30px -8px rgba(240,107,44,.6);
+  }
+  .btn-primary:hover { transform: translateY(-2px); background: var(--orange-2); box-shadow: 0 16px 40px -8px rgba(240,107,44,.7); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line-2);
+  }
+  .btn-ghost:hover { border-color: var(--ink); transform: translateY(-2px); }
+
+  /* Whilst-you-wait reassurance */
+  .reassurance {
+    margin-top: 36px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    font-family: var(--mono);
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeUp .7s 1.05s ease both;
+  }
+
+  /* Footer */
+  footer {
+    background: #07080b;
+    padding: 30px 0;
+    border-top: 1px solid var(--line);
+  }
+  .foot-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .foot-links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .foot-links a { color: var(--ink-dim); font-size: 13px; }
+  .foot-links a:hover { color: var(--ink); }
+  .foot-copy { font-size: 12px; color: var(--ink-mute); }
+</style>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6ZTX5JF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="topbar">
+  <div class="wrap-wide topbar-inner">
+    <a href="index.html" class="brand">
+      <img src="images/logo.jpeg" alt="DOS Tints logo" />
+      <div class="brand-text">
+        <span class="b1">DOS Tints</span>
+        <span class="b2">Premium · Window Film</span>
+      </div>
+    </a>
+    <a href="tel:07599000899" class="nav-phone">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>07599 000 899</span>
+    </a>
+  </div>
+</header>
+
+<section class="ty-section">
+  <div class="wrap">
+    <div class="ty-card">
+
+      <div class="ty-tick" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+
+      <div class="ty-eyebrow">Enquiry received</div>
+
+      <h1 class="ty-headline" id="tyHeadline">
+        Thanks<span id="tyName"></span> — <em>we've got it.</em>
+      </h1>
+
+      <p class="ty-sub">
+        Your enquiry has landed in our inbox. We'll come back to you with a fixed quote within the hour during opening times — usually a lot sooner.
+      </p>
+
+      <div class="next-steps">
+        <div class="step">
+          <div class="step-num">i.</div>
+          <h3>We review your details</h3>
+          <p>Make, model and the shade you've asked for. No upsells, no surprises.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">ii.</div>
+          <h3>We send a fixed quote</h3>
+          <p>Straight to your phone or email — usually within the hour.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">iii.</div>
+          <h3>You pick a slot</h3>
+          <p>£25 deposit secures it. Most cars in and out the same day.</p>
+        </div>
+      </div>
+
+      <div class="ty-actions">
+        <a href="tel:07599000899" class="btn btn-primary">
+          Call us anyway · 07599 000 899
+        </a>
+        <a href="index.html" class="btn btn-ghost">Back to home</a>
+      </div>
+
+      <div class="reassurance">Mon–Fri · 9am – 7pm &nbsp;·&nbsp; Sat–Sun · 9am – 5pm</div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap-wide foot-inner">
+    <span class="foot-copy">© 2026 DOS Tints Ltd. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Personalise the headline with the customer's first name if PHP passed one
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const rawName = params.get('name');
+    if (!rawName) return;
+
+    // Take just the first name, strip any HTML/odd chars defensively
+    const firstName = rawName
+      .trim()
+      .split(/\s+/)[0]
+      .replace(/[<>"'`]/g, '')
+      .slice(0, 30);
+
+    if (firstName) {
+      const target = document.getElementById('tyName');
+      if (target) target.textContent = ', ' + firstName;
+    }
+  })();
+
+  // GTM is already loaded in the head with default-denied consent.
+  // Push the conversion event regardless — Google's Consent Mode will
+  // either record it fully (if user accepted cookies) or use modelled
+  // conversions based on aggregated data (if user declined).
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'enquiry_submitted' });
+</script>
+
+</body>
+</html>
