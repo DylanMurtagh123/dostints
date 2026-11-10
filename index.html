@@ -1824,9 +1824,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Get an instant quote</h3>
         <p class="form-sub">Fill in a few details — we usually reply within the hour during opening times.</p>
 
-        <form class="contact-form" id="dosContactForm" action="send-enquiry.php" method="post">
+        <form class="contact-form" id="dosContactForm"
+              action="https://formsubmit.co/dos.tints1@gmail.com" method="POST">
+
+          <input type="hidden" name="_subject" value="New DOS Tints quote enquiry">
+          <input type="hidden" name="_next" value="https://dostints.co.uk/thank-you.html">
           <!-- Honeypot anti-spam field, hidden from real users -->
-          <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
           <div class="form-row">
             <div class="field">
               <label for="cf-name">Name</label>
